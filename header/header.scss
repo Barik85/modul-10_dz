@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 830px;
+    margin: 0px auto 0px auto;
+    align-items: center;
+    padding: 46px 0px 52px 0px;
+}
+.header__left-part, .header__right-part {
+    width: 40%;
+}

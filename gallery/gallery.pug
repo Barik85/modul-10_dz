@@ -1,0 +1,14 @@
+.gallery
+    mixin gallery-item (path)    
+         .gallery__item
+             a(href=path).gallery__link
+                 img(src=path, alt="image").gallery__image  
+    +gallery-item("img/Gallery_1.jpg")
+    +gallery-item("img/Gallery_2.jpg")
+    +gallery-item("img/Gallery_3.jpg")
+    +gallery-item("img/Gallery_4.jpg")
+    +gallery-item("img/Gallery_5.jpg")
+    +gallery-item("img/Gallery_6.jpg")
+    +gallery-item("img/Gallery_7.jpg")
+    +gallery-item("img/Gallery_8.jpg")
+    +gallery-item("img/Gallery_9.jpg")
