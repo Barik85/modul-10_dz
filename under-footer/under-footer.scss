@@ -18,6 +18,11 @@
     box-sizing: border-box;
     padding-top: 13px;
     transition: all 1s;
+    #Capa_1 {
+        width: 15px;
+        height: 13px;
+        fill: #e4b266;    
+    }
     &:hover {
         background-color: #263555;    
         #Capa_1 {
@@ -25,11 +30,7 @@
         }
     }
 }
-#Capa_1 {
-    width: 15px;
-    height: 13px;
-    fill: #e4b266;    
-}
+
 .under-footer__copyrights {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;

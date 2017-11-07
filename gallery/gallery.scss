@@ -20,6 +20,12 @@
             top: 50%;
             margin: -17px 0px 0px -17px;
         }
+        @media (max-width: 960px) {
+            width: 48%;
+        }
+        @media (max-width: 680px) {
+            width: 100%;
+        }
     }
     .gallery__link {
         display: block;

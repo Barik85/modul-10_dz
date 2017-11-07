@@ -3,6 +3,9 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (-web-kit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+        background-image: url("../img-retina/bg.jpg");
+    }
 }
 @import "../header/header.scss";
 @import "../menu/menu.scss";

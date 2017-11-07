@@ -3,6 +3,9 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (-web-kit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    body {
+      background-image: url("../img-retina/bg.jpg"); } }
 
 .header {
   display: -webkit-box;
@@ -24,9 +27,28 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 46px 0px 52px 0px; }
+  @media (max-width: 790px) {
+    .header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .header__left-part, .header__right-part {
   width: 40%; }
+  @media (max-width: 790px) {
+    .header__left-part, .header__right-part {
+      width: 290px;
+      margin-top: 13px;
+      margin-bottom: 13px; } }
+
+@media (max-width: 790px) {
+  .header__center-part {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1; } }
 
 .menu {
   list-style-type: none;
@@ -87,11 +109,15 @@ body {
 .white-wrapper {
   background-color: #ffffff;
   padding: 98px 60px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 90%;
   max-width: 1024px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0px auto 0px auto; }
+  @media (max-width: 700px) {
+    .white-wrapper {
+      width: 100%;
+      padding: 98px 15px; } }
 
 .heading1 {
   font-family: 'Pathway Gothic One', sans-serif;
@@ -129,6 +155,12 @@ body {
       left: 50%;
       top: 50%;
       margin: -17px 0px 0px -17px; }
+    @media (max-width: 960px) {
+      .gallery .gallery__item {
+        width: 48%; } }
+    @media (max-width: 680px) {
+      .gallery .gallery__item {
+        width: 100%; } }
   .gallery .gallery__link {
     display: block;
     width: 100%; }
@@ -142,6 +174,9 @@ body {
   margin: 0px auto 0px auto;
   background-color: #30455b;
   padding: 45px 0px 30px 0px; }
+  @media (max-width: 700px) {
+    .footer-block {
+      width: 100%; } }
 
 .footer-box {
   display: -webkit-box;
@@ -216,6 +251,32 @@ body {
   position: relative;
   top: 12px; }
 
+@media (max-width: 560px) {
+  .footer-contacts {
+    display: none; } }
+
+.footer-contacts_mobile {
+  display: none;
+  margin-top: 25px;
+  text-align: center; }
+  .footer-contacts_mobile .footer-box__heading {
+    margin-right: 20px; }
+  .footer-contacts_mobile #Capa_1 {
+    width: 15px;
+    height: 20px;
+    position: relative;
+    top: 3px; }
+  .footer-contacts_mobile .phone {
+    margin-right: 20px; }
+  .footer-contacts_mobile #Layer_1 {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 3px; }
+  @media (max-width: 560px) {
+    .footer-contacts_mobile {
+      display: block; } }
+
 .under-footer {
   text-align: center;
   margin: 10px auto 10px auto; }
@@ -245,15 +306,14 @@ body {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
+  .social-links__icon-circle #Capa_1 {
+    width: 15px;
+    height: 13px;
+    fill: #e4b266; }
   .social-links__icon-circle:hover {
     background-color: #263555; }
     .social-links__icon-circle:hover #Capa_1 {
       fill: #ffffff; }
-
-#Capa_1 {
-  width: 15px;
-  height: 13px;
-  fill: #e4b266; }
 
 .under-footer__copyrights, .under-footer__link {
   font-family: Arial, Helvetica, sans-serif;

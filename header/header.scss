@@ -7,7 +7,20 @@
     margin: 0px auto 0px auto;
     align-items: center;
     padding: 46px 0px 52px 0px;
+    @media (max-width: 790px) {
+        flex-direction: column;
+    }
 }
 .header__left-part, .header__right-part {
     width: 40%;
+    @media (max-width: 790px) {
+        width: 290px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+}
+.header__center-part {
+    @media (max-width: 790px) {
+        order: -1;
+    }
 }
